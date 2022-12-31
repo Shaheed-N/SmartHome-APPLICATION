@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F720BDBE295D9C4D00F78E15 /* RectangleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F720BDBD295D9C4D00F78E15 /* RectangleModel.swift */; };
+		F720BDC1295D9D9C00F78E15 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F720BDC0295D9D9C00F78E15 /* ColorExtension.swift */; };
+		F720BDC6295D9FF800F78E15 /* ClimateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F720BDC5295D9FF800F78E15 /* ClimateViewModel.swift */; };
+		F720BDC8295DAD5900F78E15 /* TemperatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F720BDC7295DAD5900F78E15 /* TemperatureView.swift */; };
+		F72238F5295F07A6000B9BEC /* PowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72238F4295F07A6000B9BEC /* PowerView.swift */; };
+		F72238F7295F17D8000B9BEC /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72238F6295F17D8000B9BEC /* InfoView.swift */; };
+		F72238F9295F21E2000B9BEC /* MyHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72238F8295F21E2000B9BEC /* MyHomeView.swift */; };
+		F72238FB295F221A000B9BEC /* Energy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72238FA295F221A000B9BEC /* Energy.swift */; };
+		F72238FD295F2224000B9BEC /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72238FC295F2224000B9BEC /* Grid.swift */; };
+		F72238FF295F3268000B9BEC /* GridElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72238FE295F3268000B9BEC /* GridElement.swift */; };
+		F7223901295F6AC9000B9BEC /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7223900295F6AC9000B9BEC /* Light.swift */; };
+		F7223903295F6B06000B9BEC /* LightVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7223902295F6B06000B9BEC /* LightVM.swift */; };
+		F7223907295F944D000B9BEC /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7223906295F944D000B9BEC /* SwiftUIView.swift */; };
+		F74AA394295C4DBA00A98F0D /* SmartHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AA393295C4DBA00A98F0D /* SmartHomeApp.swift */; };
+		F74AA396295C4DBA00A98F0D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AA395295C4DBA00A98F0D /* HomeView.swift */; };
+		F74AA398295C4DBB00A98F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74AA397295C4DBB00A98F0D /* Assets.xcassets */; };
+		F74AA39B295C4DBB00A98F0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74AA39A295C4DBB00A98F0D /* Preview Assets.xcassets */; };
+		F74AA3A3295C522A00A98F0D /* Neumorphic in Frameworks */ = {isa = PBXBuildFile; productRef = F74AA3A2295C522A00A98F0D /* Neumorphic */; };
+		F7958C9A295E1AFB0049EAC7 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7958C99295E1AFB0049EAC7 /* SecondView.swift */; };
+		F7958C9C295E1BF60049EAC7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7958C9B295E1BF60049EAC7 /* MainView.swift */; };
+		F7D2507C295C9EB300973182 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2507B295C9EB300973182 /* Rectangle.swift */; };
+		F7D2507E295C9EC000973182 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2507D295C9EC000973182 /* Tabbar.swift */; };
+		F7D25080295C9EC400973182 /* CircleNeumo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D2507F295C9EC400973182 /* CircleNeumo.swift */; };
+		F7D25082295C9EC900973182 /* otpecatok.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D25081295C9EC900973182 /* otpecatok.swift */; };
+		F7D25084295C9ECC00973182 /* background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D25083295C9ECC00973182 /* background.swift */; };
+		F7D2509A295CA7A500973182 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D25087295CA7A500973182 /* Poppins-ExtraBold.ttf */; };
+		F7D2509B295CA7A500973182 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D25088295CA7A500973182 /* Poppins-BoldItalic.ttf */; };
+		F7D2509C295CA7A500973182 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D25089295CA7A500973182 /* Poppins-Light.ttf */; };
+		F7D2509D295CA7A500973182 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D2508A295CA7A500973182 /* Poppins-SemiBold.ttf */; };
+		F7D2509E295CA7A500973182 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D2508B295CA7A500973182 /* Poppins-BlackItalic.ttf */; };
+		F7D2509F295CA7A500973182 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D2508C295CA7A500973182 /* Poppins-LightItalic.ttf */; };
+		F7D250A0295CA7A500973182 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D2508D295CA7A500973182 /* Poppins-Italic.ttf */; };
+		F7D250A1295CA7A500973182 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D2508E295CA7A500973182 /* Poppins-ExtraLight.ttf */; };
+		F7D250A2295CA7A500973182 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D2508F295CA7A500973182 /* Poppins-Bold.ttf */; };
+		F7D250A3295CA7A500973182 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D25090295CA7A500973182 /* Poppins-Regular.ttf */; };
+		F7D250A4295CA7A500973182 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D25091295CA7A500973182 /* Poppins-SemiBoldItalic.ttf */; };
+		F7D250A5295CA7A500973182 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = F7D25092295CA7A500973182 /* OFL.txt */; };
+		F7D250A6295CA7A500973182 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D25093295CA7A500973182 /* Poppins-ExtraBoldItalic.ttf */; };
+		F7D250A7295CA7A500973182 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D25094295CA7A500973182 /* Poppins-Thin.ttf */; };
+		F7D250A8295CA7A500973182 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D25095295CA7A500973182 /* Poppins-MediumItalic.ttf */; };
+		F7D250A9295CA7A500973182 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D25096295CA7A500973182 /* Poppins-Black.ttf */; };
+		F7D250AA295CA7A500973182 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D25097295CA7A500973182 /* Poppins-ExtraLightItalic.ttf */; };
+		F7D250AB295CA7A500973182 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D25098295CA7A500973182 /* Poppins-Medium.ttf */; };
+		F7D250AC295CA7A500973182 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D25099295CA7A500973182 /* Poppins-ThinItalic.ttf */; };
+		F7D250AF295CA95C00973182 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D250AE295CA95C00973182 /* FontExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F720BDBD295D9C4D00F78E15 /* RectangleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleModel.swift; sourceTree = "<group>"; };
+		F720BDC0295D9D9C00F78E15 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		F720BDC5295D9FF800F78E15 /* ClimateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateViewModel.swift; sourceTree = "<group>"; };
+		F720BDC7295DAD5900F78E15 /* TemperatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureView.swift; sourceTree = "<group>"; };
+		F72238F4295F07A6000B9BEC /* PowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerView.swift; sourceTree = "<group>"; };
+		F72238F6295F17D8000B9BEC /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		F72238F8295F21E2000B9BEC /* MyHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomeView.swift; sourceTree = "<group>"; };
+		F72238FA295F221A000B9BEC /* Energy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Energy.swift; sourceTree = "<group>"; };
+		F72238FC295F2224000B9BEC /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		F72238FE295F3268000B9BEC /* GridElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridElement.swift; sourceTree = "<group>"; };
+		F7223900295F6AC9000B9BEC /* Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		F7223902295F6B06000B9BEC /* LightVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightVM.swift; sourceTree = "<group>"; };
+		F7223906295F944D000B9BEC /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		F74AA390295C4DBA00A98F0D /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F74AA393295C4DBA00A98F0D /* SmartHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeApp.swift; sourceTree = "<group>"; };
+		F74AA395295C4DBA00A98F0D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F74AA397295C4DBB00A98F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F74AA39A295C4DBB00A98F0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7958C99295E1AFB0049EAC7 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		F7958C9B295E1BF60049EAC7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F7D2507B295C9EB300973182 /* Rectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
+		F7D2507D295C9EC000973182 /* Tabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
+		F7D2507F295C9EC400973182 /* CircleNeumo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleNeumo.swift; sourceTree = "<group>"; };
+		F7D25081295C9EC900973182 /* otpecatok.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = otpecatok.swift; sourceTree = "<group>"; };
+		F7D25083295C9ECC00973182 /* background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = background.swift; sourceTree = "<group>"; };
+		F7D25087295CA7A500973182 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F7D25088295CA7A500973182 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F7D25089295CA7A500973182 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		F7D2508A295CA7A500973182 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		F7D2508B295CA7A500973182 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		F7D2508C295CA7A500973182 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		F7D2508D295CA7A500973182 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		F7D2508E295CA7A500973182 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F7D2508F295CA7A500973182 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		F7D25090295CA7A500973182 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		F7D25091295CA7A500973182 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F7D25092295CA7A500973182 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		F7D25093295CA7A500973182 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F7D25094295CA7A500973182 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		F7D25095295CA7A500973182 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		F7D25096295CA7A500973182 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		F7D25097295CA7A500973182 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		F7D25098295CA7A500973182 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		F7D25099295CA7A500973182 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		F7D250AD295CA7EA00973182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D250AE295CA95C00973182 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F74AA38D295C4DBA00A98F0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74AA3A3295C522A00A98F0D /* Neumorphic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F720BDBC295D9C3F00F78E15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F720BDBD295D9C4D00F78E15 /* RectangleModel.swift */,
+				F7223900295F6AC9000B9BEC /* Light.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F720BDBF295D9D8000F78E15 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F7D250AE295CA95C00973182 /* FontExtension.swift */,
+				F720BDC0295D9D9C00F78E15 /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F720BDC4295D9FE800F78E15 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F720BDC5295D9FF800F78E15 /* ClimateViewModel.swift */,
+				F7223902295F6B06000B9BEC /* LightVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F74AA387295C4DBA00A98F0D = {
+			isa = PBXGroup;
+			children = (
+				F74AA393295C4DBA00A98F0D /* SmartHomeApp.swift */,
+				F74AA392295C4DBA00A98F0D /* SmartHome */,
+				F74AA391295C4DBA00A98F0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F74AA391295C4DBA00A98F0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F74AA390295C4DBA00A98F0D /* SmartHome.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F74AA392295C4DBA00A98F0D /* SmartHome */ = {
+			isa = PBXGroup;
+			children = (
+				F7958C9D295E1C8A0049EAC7 /* Core */,
+				F720BDBC295D9C3F00F78E15 /* Model */,
+				F720BDC4295D9FE800F78E15 /* ViewModel */,
+				F720BDBF295D9D8000F78E15 /* Extensions */,
+				F7D25086295CA79700973182 /* Fonts */,
+				F74AA397295C4DBB00A98F0D /* Assets.xcassets */,
+				F7D250AD295CA7EA00973182 /* Info.plist */,
+				F74AA399295C4DBB00A98F0D /* Preview Content */,
+			);
+			path = SmartHome;
+			sourceTree = "<group>";
+		};
+		F74AA399295C4DBB00A98F0D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F74AA39A295C4DBB00A98F0D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7958C9D295E1C8A0049EAC7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F7958C9F295E1CB30049EAC7 /* MainView */,
+				F7958C9E295E1CAA0049EAC7 /* SecondView */,
+				F7D25085295C9ED800973182 /* HomeView */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F7958C9E295E1CAA0049EAC7 /* SecondView */ = {
+			isa = PBXGroup;
+			children = (
+				F7958C99295E1AFB0049EAC7 /* SecondView.swift */,
+				F72238F4295F07A6000B9BEC /* PowerView.swift */,
+				F72238F6295F17D8000B9BEC /* InfoView.swift */,
+				F72238F8295F21E2000B9BEC /* MyHomeView.swift */,
+				F72238FA295F221A000B9BEC /* Energy.swift */,
+				F72238FC295F2224000B9BEC /* Grid.swift */,
+				F72238FE295F3268000B9BEC /* GridElement.swift */,
+			);
+			path = SecondView;
+			sourceTree = "<group>";
+		};
+		F7958C9F295E1CB30049EAC7 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				F7958C9B295E1BF60049EAC7 /* MainView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		F7D25085295C9ED800973182 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				F7D2507D295C9EC000973182 /* Tabbar.swift */,
+				F7D25083295C9ECC00973182 /* background.swift */,
+				F7D2507B295C9EB300973182 /* Rectangle.swift */,
+				F7D25081295C9EC900973182 /* otpecatok.swift */,
+				F74AA395295C4DBA00A98F0D /* HomeView.swift */,
+				F7D2507F295C9EC400973182 /* CircleNeumo.swift */,
+				F720BDC7295DAD5900F78E15 /* TemperatureView.swift */,
+				F7223906295F944D000B9BEC /* SwiftUIView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		F7D25086295CA79700973182 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F7D25092295CA7A500973182 /* OFL.txt */,
+				F7D25096295CA7A500973182 /* Poppins-Black.ttf */,
+				F7D2508B295CA7A500973182 /* Poppins-BlackItalic.ttf */,
+				F7D2508F295CA7A500973182 /* Poppins-Bold.ttf */,
+				F7D25088295CA7A500973182 /* Poppins-BoldItalic.ttf */,
+				F7D25087295CA7A500973182 /* Poppins-ExtraBold.ttf */,
+				F7D25093295CA7A500973182 /* Poppins-ExtraBoldItalic.ttf */,
+				F7D2508E295CA7A500973182 /* Poppins-ExtraLight.ttf */,
+				F7D25097295CA7A500973182 /* Poppins-ExtraLightItalic.ttf */,
+				F7D2508D295CA7A500973182 /* Poppins-Italic.ttf */,
+				F7D25089295CA7A500973182 /* Poppins-Light.ttf */,
+				F7D2508C295CA7A500973182 /* Poppins-LightItalic.ttf */,
+				F7D25098295CA7A500973182 /* Poppins-Medium.ttf */,
+				F7D25095295CA7A500973182 /* Poppins-MediumItalic.ttf */,
+				F7D25090295CA7A500973182 /* Poppins-Regular.ttf */,
+				F7D2508A295CA7A500973182 /* Poppins-SemiBold.ttf */,
+				F7D25091295CA7A500973182 /* Poppins-SemiBoldItalic.ttf */,
+				F7D25094295CA7A500973182 /* Poppins-Thin.ttf */,
+				F7D25099295CA7A500973182 /* Poppins-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F74AA38F295C4DBA00A98F0D /* SmartHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F74AA39E295C4DBB00A98F0D /* Build configuration list for PBXNativeTarget "SmartHome" */;
+			buildPhases = (
+				F74AA38C295C4DBA00A98F0D /* Sources */,
+				F74AA38D295C4DBA00A98F0D /* Frameworks */,
+				F74AA38E295C4DBA00A98F0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartHome;
+			packageProductDependencies = (
+				F74AA3A2295C522A00A98F0D /* Neumorphic */,
+			);
+			productName = SmartHome;
+			productReference = F74AA390295C4DBA00A98F0D /* SmartHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F74AA388295C4DBA00A98F0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F74AA38F295C4DBA00A98F0D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = F74AA38B295C4DBA00A98F0D /* Build configuration list for PBXProject "SmartHome" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F74AA387295C4DBA00A98F0D;
+			packageReferences = (
+				F74AA3A1295C522A00A98F0D /* XCRemoteSwiftPackageReference "neumorphic" */,
+			);
+			productRefGroup = F74AA391295C4DBA00A98F0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F74AA38F295C4DBA00A98F0D /* SmartHome */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F74AA38E295C4DBA00A98F0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D250A5295CA7A500973182 /* OFL.txt in Resources */,
+				F7D250A1295CA7A500973182 /* Poppins-ExtraLight.ttf in Resources */,
+				F7D250AA295CA7A500973182 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				F74AA39B295C4DBB00A98F0D /* Preview Assets.xcassets in Resources */,
+				F7D2509E295CA7A500973182 /* Poppins-BlackItalic.ttf in Resources */,
+				F7D250A4295CA7A500973182 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				F7D250A7295CA7A500973182 /* Poppins-Thin.ttf in Resources */,
+				F7D250A9295CA7A500973182 /* Poppins-Black.ttf in Resources */,
+				F7D250A3295CA7A500973182 /* Poppins-Regular.ttf in Resources */,
+				F7D250AB295CA7A500973182 /* Poppins-Medium.ttf in Resources */,
+				F7D2509C295CA7A500973182 /* Poppins-Light.ttf in Resources */,
+				F7D250A0295CA7A500973182 /* Poppins-Italic.ttf in Resources */,
+				F7D250AC295CA7A500973182 /* Poppins-ThinItalic.ttf in Resources */,
+				F7D2509A295CA7A500973182 /* Poppins-ExtraBold.ttf in Resources */,
+				F7D250A6295CA7A500973182 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				F7D250A8295CA7A500973182 /* Poppins-MediumItalic.ttf in Resources */,
+				F7D2509D295CA7A500973182 /* Poppins-SemiBold.ttf in Resources */,
+				F7D250A2295CA7A500973182 /* Poppins-Bold.ttf in Resources */,
+				F74AA398295C4DBB00A98F0D /* Assets.xcassets in Resources */,
+				F7D2509B295CA7A500973182 /* Poppins-BoldItalic.ttf in Resources */,
+				F7D2509F295CA7A500973182 /* Poppins-LightItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F74AA38C295C4DBA00A98F0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72238FF295F3268000B9BEC /* GridElement.swift in Sources */,
+				F72238FD295F2224000B9BEC /* Grid.swift in Sources */,
+				F72238F7295F17D8000B9BEC /* InfoView.swift in Sources */,
+				F7D25082295C9EC900973182 /* otpecatok.swift in Sources */,
+				F7958C9C295E1BF60049EAC7 /* MainView.swift in Sources */,
+				F720BDC6295D9FF800F78E15 /* ClimateViewModel.swift in Sources */,
+				F7223907295F944D000B9BEC /* SwiftUIView.swift in Sources */,
+				F7D2507C295C9EB300973182 /* Rectangle.swift in Sources */,
+				F74AA396295C4DBA00A98F0D /* HomeView.swift in Sources */,
+				F74AA394295C4DBA00A98F0D /* SmartHomeApp.swift in Sources */,
+				F72238FB295F221A000B9BEC /* Energy.swift in Sources */,
+				F720BDC8295DAD5900F78E15 /* TemperatureView.swift in Sources */,
+				F7D2507E295C9EC000973182 /* Tabbar.swift in Sources */,
+				F7223901295F6AC9000B9BEC /* Light.swift in Sources */,
+				F7D25084295C9ECC00973182 /* background.swift in Sources */,
+				F72238F9295F21E2000B9BEC /* MyHomeView.swift in Sources */,
+				F72238F5295F07A6000B9BEC /* PowerView.swift in Sources */,
+				F720BDBE295D9C4D00F78E15 /* RectangleModel.swift in Sources */,
+				F7D25080295C9EC400973182 /* CircleNeumo.swift in Sources */,
+				F7958C9A295E1AFB0049EAC7 /* SecondView.swift in Sources */,
+				F7223903295F6B06000B9BEC /* LightVM.swift in Sources */,
+				F7D250AF295CA95C00973182 /* FontExtension.swift in Sources */,
+				F720BDC1295D9D9C00F78E15 /* ColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F74AA39C295C4DBB00A98F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F74AA39D295C4DBB00A98F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F74AA39F295C4DBB00A98F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartHome/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartHome/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projectbirwedw.SmartHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F74AA3A0295C4DBB00A98F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartHome/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartHome/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projectbirwedw.SmartHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F74AA38B295C4DBA00A98F0D /* Build configuration list for PBXProject "SmartHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74AA39C295C4DBB00A98F0D /* Debug */,
+				F74AA39D295C4DBB00A98F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F74AA39E295C4DBB00A98F0D /* Build configuration list for PBXNativeTarget "SmartHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74AA39F295C4DBB00A98F0D /* Debug */,
+				F74AA3A0295C4DBB00A98F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F74AA3A1295C522A00A98F0D /* XCRemoteSwiftPackageReference "neumorphic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/costachung/neumorphic/";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F74AA3A2295C522A00A98F0D /* Neumorphic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F74AA3A1295C522A00A98F0D /* XCRemoteSwiftPackageReference "neumorphic" */;
+			productName = Neumorphic;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F74AA388295C4DBA00A98F0D /* Project object */;
+}
