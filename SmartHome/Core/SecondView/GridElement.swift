@@ -124,10 +124,10 @@ struct CustomToggle: View {
                 .fill( RadialGradient(gradient: gradient, center: .center, startRadius: 12, endRadius:65))
                 .frame(width: 40, height: 40)
             }
-            .padding(.top , -40)
+            .padding(.top , -41)
           }
         }
-      })
+      } )
     }
 }
 
