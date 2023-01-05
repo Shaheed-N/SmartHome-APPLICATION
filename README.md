@@ -1,4 +1,4 @@
-# Smart Home Application 
+# Smart Home iOS Application 
 
 Smart Home Application with complex UI and neumorphic design. Used technology: Swift, SwiftUI
 
